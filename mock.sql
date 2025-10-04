@@ -11,4 +11,4 @@ INSERT INTO Tulli (ID, Ylityspaikka, Suunta, Maa, pvm, Tulli_tunnus, Tulli_sijai
 INSERT INTO Kuljetusyritys (ID, Kuljettaja, Lahto, Maaranpaa, Kuormantyyppi, Lahtoaika, Saapumisaika, Status) VALUES
 (S9001, 'J. Niemi', 'Helsinki', 'Tallinna', 'Elintarvikkeet', '2025-10-01 06:30', '2025-10-01 11:00', 'toimitettu'),
 (S9002, 'A. Korhonen', 'Oulu', 'Tampere', 'Elektroniikka', '2025-10-03 07:15', '2025-10-03 12:45', 'kesken'),
-(S9001, NULL, 'Lappeenranta', 'Pietari', 'Tyhjä perävaunu', '2025-09-29 20:00', '2025-09-29 23:10', 'odottaa');
+(S9003, 'K. Nieminen', 'Lappeenranta', 'Pietari', 'Tyhjä perävaunu', '2025-09-29 20:00', '2025-09-29 23:10', 'odottaa');
