@@ -18,7 +18,7 @@ def create_heatmap():
     data [18,12] += 4
     data [18,13] += 4
 
-   # Create colormap mapping using matplotlib
+   # Create colormap mapping using matplotliba
     cmap = plt.cm.spring
     norm = mpl.colors.Normalize(vmin=data.min(), vmax=data.max())
     
