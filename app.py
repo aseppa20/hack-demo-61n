@@ -16,5 +16,11 @@ def serve_suomi(query=None):
 def serve_helsinki(query=None):
     return render_template("map_helsinki.html.jinja", query=query)
 
+
+@app.route("/viesti/")
+@app.route("/viesti/<query>")
+def serve_viesti(query=None):
+    return render_template("viesti.html", query = query)
+
 if __name__ == "__main__":
     app.run(debug=True)

@@ -2,13 +2,20 @@
 <html>
 <head>
     <title>Omnibase</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='templates/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+<style>
+    body {
+        background-image: url("../static/omnibase.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>
 <body>
     <div class="container">
-        <h1>Omnibase</h1>
-        <p>This is a paragraph.</p>
-        <a href="/suomi/"><button>Go to Suomi map</button></a>
+        <a href="/suomi/" class="btn">Go to Finland Map</a>
+        <a href="/viesti/" class="btn">Send a Message</a>
     </div>
 </body>
 </html>
