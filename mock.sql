@@ -1,5 +1,5 @@
-INSERT INTO Ajoneuvot (Rekisteri, Merkki, Malli, Valmistusvuosi, Rekisterointi_maa, viime_sijainti, Status) VALUES,
-('UGY-630', 'Volvo', 'R580', 2023, 'Latvia', 'Latvia', 'myyty'),
+INSERT INTO Ajoneuvot (Rekisteri, Merkki, Malli, Valmistusvuosi, Rekisterointi_maa, viime_sijainti, Status) VALUES
+('UGY-631', 'Volvo', 'R580', 2023, 'Latvia', 'Latvia', 'myyty'),
 ('XXT-457', 'Mercedes-Benz', 'Transit', 2017, 'Suomi', 'Latvia', 'poistettu'),
 ('CCS-927', 'Scania', 'Passat', 2003, 'Viro', 'Norja', 'poistettu'),
 ('PMP-324', 'Renault', 'TGS', 2019, 'Viro', 'Puola', 'myyty'),
@@ -100,7 +100,7 @@ INSERT INTO Ajoneuvot (Rekisteri, Merkki, Malli, Valmistusvuosi, Rekisterointi_m
 ('XZO-199', 'Volvo', 'Megane', 2000, 'Puola', 'Ruotsi', 'huollossa'),
 ('TEF-789', 'Iveco', 'TGS', 2013, 'Saksa', 'Saksa', 'huollossa');
 
-INSERT INTO Tulli (ID, Ylityspaikka, Suunta, Maa, pvm, Tulli_tunnus, Tulli_sijainti, Rekisteri, Maatunnus, Status) VALUES,
+INSERT INTO Tulli (ID, Ylityspaikka, Suunta, Maa, pvm, Tulli_tunnus, Tulli_sijainti, Rekisteri, Maatunnus, Status) VALUES
 ('C1004', 'Imatra', 'maahantulo', 'Suomi', '2025-09-02 02:25:55', 'T20250902B', 'Turku', 'DEF-456', 'LVA', FALSE),
 ('C1005', 'Tornio', 'maastalähtö', 'Ruotsi', '2025-09-18 20:15:33', 'T20250918D', 'Lappeenranta', 'NDY-742', 'EST', TRUE),
 ('C1006', 'Tornio', 'maahantulo', 'Norja', '2025-09-11 07:13:39', 'T20250911E', 'Lahti', 'GHI-789', 'EST', FALSE),
@@ -202,7 +202,7 @@ INSERT INTO Tulli (ID, Ylityspaikka, Suunta, Maa, pvm, Tulli_tunnus, Tulli_sijai
 ('C1102', 'Vaalimaa', 'maahantulo', 'Suomi', '2025-09-28 17:04:23', 'T20250928A', 'Pietari', 'DEF-456', 'POL', TRUE),
 ('C1103', 'Helsinki Vuosaari', 'maahantulo', 'Norja', '2025-09-18 05:49:00', 'T20250918E', 'Helsinki', 'SZT-310', 'POL', FALSE);
 
-INSERT INTO Kuljetusyritys (ID, Rekisteri, Kuljettaja, Lahto, Maaranpaa, Kuormantyyppi, Lahtoaika, Saapumisaika, Status) VALUES,
+INSERT INTO Kuljetusyritys (ID, Rekisteri, Kuljettaja, Lahto, Maaranpaa, Kuormantyyppi, Lahtoaika, Saapumisaika, Status) VALUES
 ('S9004', 'GMX-839', 'M. Virtanen', 'Lappeenranta', 'Tampere', 'Rakennustarvikkeet', '2025-09-20 03:23:17', '2025-09-20 07:23:17', 'toimitettu'),
 ('S9005', 'DEF-456', 'J. Niemi', 'Helsinki', 'Turku', 'Huonekalut', '2025-09-15 17:11:07', '2025-09-15 19:11:07', 'toimitettu'),
 ('S9006', 'ABC-123', 'J. Heikkinen', 'Turku', 'Tallinna', 'Koneet', '2025-09-17 04:16:23', '2025-09-17 13:16:23', 'viivästynyt'),
