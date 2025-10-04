@@ -1,6 +1,6 @@
 INSERT INTO Ajoneuvot (Rekisteri, Merkki, Malli, Valmistusvuosi, Status) VALUES
 ('ABC-123', 'Volvo', 'FH16', 2019, 'aktiivinen'),
-('DEF-456', 'Scania', 'R580', 2021, 'huollossa'),
+('DEF-456', 'Scania', 'R580', 2021, 'seisonta'),
 ('GHI-789', 'Krone', 'CoolLiner', 2018, 'aktiivinen');
 
 INSERT INTO Tulli (ID, Ylityspaikka, Suunta, Maa, pvm, Tulli_tunnus, Status) VALUES
