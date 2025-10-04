@@ -7,16 +7,50 @@ import matplotlib as mpl
 
 def create_heatmap():
     data = np.zeros((80, 80)) # do not change
-    data [0, 0] += 8
-    data [1, 0] += 8
-    data [0, 2] += 8
-    data [1, 2] += 8
-    data [2, 2] += 4
-    data [3, 2] += 4
-    data [4, 3] += 4
-    data [4, 4] += 4
-    data [18,12] += 4
-    data [18,13] += 4
+    data [1, 0] += 10
+    data [2, 0] += 10
+    data [3, 0] += 10
+    data [4, 0] += 10
+    data [5, 0] += 10
+    data [6, 0] += 10
+    data [7, 0] += 10
+    data [8, 0] += 10
+    data [9, 0] += 10
+    data [0,0] += 10
+    data [0,1] += 10
+    data [0,2] += 10
+    data [0,3] += 10
+    data [0,4] += 10
+    data [0,5] += 10
+    data [0,6] += 10
+    data [0,7] += 10
+    data [0,8] += 10
+    data [0,9] += 10
+
+    #Helsinki
+    data [67, 47] += 10
+    data [68, 48] += 10
+    data [69, 49] += 10
+    data [70, 50] += 10
+    data [71, 51] += 10
+    data [72, 52] += 10
+
+    #Nurmijärvi
+    data[14, 37] += 10
+    data[20, 40] += 10
+    data[12, 35] += 10
+
+    #Järvenpää
+    data[12, 64] += 10
+    data[17, 70] += 10
+
+    #Espoo/Kauniainen
+    data[60, 25] += 10
+    data[68, 30] += 10
+
+    #Vantaa
+    data[42, 50] += 10
+    data[49, 60] += 10
 
    # Create colormap mapping using matplotliba
     cmap = plt.cm.spring
