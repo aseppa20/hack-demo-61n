@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from create_heatmap import create_heatmap
 
 app = Flask(__name__)
 

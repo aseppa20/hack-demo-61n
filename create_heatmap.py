@@ -1,24 +1,36 @@
 import matplotlib.pyplot as plt
+import matplotlib.axes as axes
 import numpy as np
 
 import matplotlib
 import matplotlib as mpl
 
-harvest = np.array([[0.8, 2.4, 2.5, 3.9, 0.0, 4.0, 0.0],
-                    [2.4, 0.0, 4.0, 1.0, 2.7, 0.0, 0.0],
-                    [1.1, 2.4, 0.8, 4.3, 1.9, 4.4, 0.0],
-                    [0.6, 0.0, 0.3, 0.0, 3.1, 0.0, 0.0],
-                    [0.7, 1.7, 0.6, 2.6, 2.2, 6.2, 0.0],
-                    [1.3, 1.2, 0.0, 0.0, 0.0, 3.2, 5.1],
-                    [0.1, 2.0, 0.0, 1.4, 0.0, 1.9, 6.3]])
+def create_heatmap():
+    data = np.zeros((80, 80))
+    data [0, 0] += 8
+    data [1, 0] += 8
+    data [0, 2] += 8
+    data [1, 2] += 8
+    data [2, 2] += 4
+    data [3, 2] += 4
+    data [4, 3] += 4
+    data [4, 4] += 4
+    data [18,12] += 4
+    data [18,13] += 4
 
 
-fig, ax = plt.subplots()
-im = ax.imshow(harvest)
+    fig, ax = plt.subplots(figsize=(800/300, 800/300), dpi=300)
+    ax.axis('off')
+    #ax.set_axis_off()
+    #if __name__ == "__main__":
+    im = ax.imshow(data, cmap="spring")
 
 
-# Loop over data dimensions and create text annotations.
-fig.tight_layout()
-# plt.figure(figsize=(800/300, 800/300), dpi=300)
-plt.savefig("test.png", transparent=True)
-plt.show()
+    # Loop over data dimensions and create text annotations.
+    fig.tight_layout()
+    # plt.figure(figsize=(800/300, 800/300), dpi=300)
+    plt.savefig("static/figs/test.png", transparent=True, bbox_inches=0)
+    #plt.show()
+
+if __name__ == "__main__":
+    create_heatmap()
