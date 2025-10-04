@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+import processdata
 
 app = Flask(__name__)
 
@@ -14,7 +15,8 @@ def serve_suomi(query=None):
 @app.route("/helsinki/")
 @app.route("/helsinki/<query>")
 def serve_helsinki(query=None):
-    return render_template("map_helsinki.html.jinja", query=query)
+    trucklist = processdata.create_data_for_helsinki()
+    return render_template("map_helsinki.html.jinja", query=query, trucklist=trucklist)
 
 
 @app.route("/viesti/")
