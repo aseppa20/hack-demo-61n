@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+    <title>Map of Southern Finland</title>
+</head>
+<body>
+    {% if query %}
+  <h1>Hello {{ query }}!</h1>
+    {% else %}
+  <h1>Hello, World!</h1>
+    {% endif %}
+    <div style="width: 800px; height: 800px;">
+    <img src="{{url_for('static', filename='helsinki.png')}}" style="width: 800px; height: 800px;" />
+    <img src="{{url_for('static', filename='test.png')}}" style="width: 800px; height: 800px;" />
+    </div>
+    <p>Maps from Maanmittauslaitos Maastotietokanta 10/2025. Licensed under CC-4.0 Lisence</p>
+</body>
