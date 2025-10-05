@@ -1,5 +1,5 @@
 def init_ajoneuvot_table():
-    s =  """INSERT INTO Ajoneuvot (Rekisteri, Merkki, Malli, Valmistusvuosi, Rekisterointi_maa, viime_sijainti, Status) VALUES
+    return """INSERT INTO Ajoneuvot (Rekisteri, Merkki, Malli, Valmistusvuosi, Rekisterointi_maa, viime_sijainti, Status) VALUES
         ('UGY-630', 'Volvo', 'R580', 2023, 'Latvia', 'Latvia', 'myyty'),
         ('XXT-457', 'Mercedes-Benz', 'Transit', 2017, 'Suomi', 'Latvia', 'poistettu'),
         ('CCS-927', 'Scania', 'Passat', 2003, 'Viro', 'Norja', 'poistettu'),
@@ -100,7 +100,6 @@ def init_ajoneuvot_table():
         ('UBR-532', 'Volvo', 'XF', 2004, 'Ruotsi', 'Puola', 'poistettu'),
         ('XZO-199', 'Volvo', 'Megane', 2000, 'Puola', 'Ruotsi', 'huollossa'),
         ('TEF-789', 'Iveco', 'TGS', 2013, 'Saksa', 'Saksa', 'huollossa');"""
-    return s
 
 def init_tulli_table():
     return """INSERT INTO Tulli (ID, Ylityspaikka, Suunta, Maa, pvm, Tulli_tunnus, Tulli_sijainti, Rekisteri, Maatunnus, Status) VALUES

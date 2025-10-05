@@ -263,12 +263,15 @@ def init_demo(create_tables=False, insert_data=False):
         tulli_cur.execute(data_init.init_tulli_table())
         yritys_cur.execute(data_init.init_yritys_table())
 
+    ajoneuvot.commit()
+    tulli.commit()
+    yritys.commit()
     ajoneuvot.close()
     tulli.close()
     yritys.close()
     central.close()
 
 if __name__ == "__main__":
-    #init_demo(create_tables=True)
+    #init_demo(create_tables=True, insertdata = True)
     #handle_data()
     print(create_data_for_heatmap())
